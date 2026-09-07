@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260907-03-a4be6dd","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/9e99ecf74af2a081.telemetry_sdk.js" integrity="sha512-tZ7fmfTx2KpCLjXQnEuL9azQ4A5+7+xumsx6r/WYVD0zCP/8LP8hDeCypMQesmP+WyAew4g7l5Ah23Bjd6yoVg=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handout 1: SMART Goals</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #18323a;
+      --muted: #50666c;
+      --paper: #fffdf8;
+      --canvas: #edf4f1;
+      --teal: #176b68;
+      --teal-dark: #0d4e4c;
+      --teal-soft: #d8ece6;
+      --gold: #d99426;
+      --line: #bed3cd;
+      --reading-size: 1.125rem;
+      --reading-line: 1.82;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: "Work Sans", sans-serif;
+    }
+
+    .site-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      background:
+        linear-gradient(90deg, rgba(23,107,104,.045) 1px, transparent 1px),
+        linear-gradient(rgba(23,107,104,.045) 1px, transparent 1px),
+        var(--canvas);
+      background-size: 28px 28px;
+    }
+
+    .reading-wrap {
+      width: min(100% - 2rem, 900px);
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1rem 0 3rem;
+    }
+
+    .handout-header {
+      border-left: 7px solid var(--gold);
+      padding: 1.35rem 1.5rem;
+      background: var(--paper);
+      box-shadow: 0 8px 28px rgba(24,50,58,.09);
+    }
+
+    .course-line {
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 { font-family: "Fraunces", serif; }
+    h1 { margin: .35rem 0 .6rem; line-height: 1.08; }
+    h2 { margin: 0; line-height: 1.2; }
+
+    .intro { color: var(--muted); line-height: 1.6; max-width: 62ch; }
+
+    .tool-panel, .reading-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 28px rgba(24,50,58,.07);
+    }
+
+    .tool-panel { margin-top: 1.25rem; padding: 1.2rem; }
+    .section-label {
+      color: var(--teal-dark);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .page-tabs {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: .55rem;
+      margin-top: .75rem;
+      width: 100%;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+      min-height: 46px;
+      border-radius: .35rem;
+    }
+
+    .page-button {
+      border: 2px solid #9fbab2;
+      background: #f7fbf9;
+      color: var(--teal-dark);
+      padding: .65rem .45rem;
+      font-weight: 700;
+      transition: background .15s ease, border-color .15s ease, transform .15s ease;
+    }
+
+    .page-button:hover { background: var(--teal-soft); }
+    .page-button[aria-current="page"] {
+      background: var(--teal);
+      color: #fff;
+      border-color: var(--teal-dark);
+      box-shadow: inset 0 -4px 0 rgba(0,0,0,.22);
+    }
+    .page-button[aria-current="page"]::after {
+      content: " • Active";
+      display: block;
+      font-size: .68rem;
+      font-weight: 600;
+      line-height: 1;
+      margin-top: .18rem;
+    }
+
+    .preferences {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .65rem;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .pref-button, .pager-button {
+      border: 1px solid #88aaa1;
+      background: #fff;
+      color: var(--teal-dark);
+      padding: .58rem .8rem;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    .pref-button:hover, .pager-button:hover:not(:disabled) {
+      background: var(--teal-soft);
+      border-color: var(--teal);
+    }
+
+    .pref-button.is-on {
+      background: #21404a;
+      border-color: #21404a;
+      color: #fff;
+    }
+
+    button:focus-visible {
+      outline: 4px solid #f2b54d;
+      outline-offset: 3px;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: .46;
+    }
+
+    .reading-card { margin-top: 1.25rem; overflow: hidden; }
+    .reading-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      background: #f4f9f6;
+    }
+
+    .progress {
+      flex: none;
+      border: 1px solid #8daea5;
+      border-radius: 999px;
+      color: var(--teal-dark);
+      font-size: .82rem;
+      font-weight: 700;
+      padding: .35rem .7rem;
+      white-space: nowrap;
+    }
+
+    .passage { padding: 1.65rem clamp(1.2rem, 4vw, 3rem) 2rem; }
+    .passage[hidden] { display: none; }
+
+    .passage-copy {
+      color: var(--ink);
+      font-size: clamp(1rem, 2.8vw, var(--reading-size));
+      line-height: var(--reading-line);
+      width: 100%;
+      max-width: 62ch;
+      overflow-wrap: anywhere;
+    }
+
+    .passage-copy p { margin: 0 0 1.5rem; }
+
+    .pager {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.15rem 1.5rem;
+      border-top: 1px solid var(--line);
+      background: #f8fbf9;
+    }
+
+    .pager-button {
+      min-width: 116px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .45rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    body.high-contrast {
+      --canvas: #000;
+      --paper: #000;
+      --ink: #fff;
+      --muted: #fff;
+      --teal: #fff;
+      --teal-dark: #fff;
+      --teal-soft: #222;
+      --line: #fff;
+    }
+    body.high-contrast .site-shell { background: #000; }
+    body.high-contrast .course-line, body.high-contrast .section-label,
+    body.high-contrast .progress { color: #fff; }
+    body.high-contrast .reading-top, body.high-contrast .pager { background: #111; }
+    body.high-contrast .page-button, body.high-contrast .pref-button,
+    body.high-contrast .pager-button { background: #000; color: #fff; border-color: #fff; }
+    body.high-contrast .page-button[aria-current="page"],
+    body.high-contrast .pref-button.is-on { background: #fff; color: #000; }
+
+    @media (max-width: 620px) {
+      .reading-wrap { width: min(100% - 1rem, 900px); padding-top: 1rem; }
+      .handout-header { padding: 1.15rem; }
+      .page-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+      .page-tabs button:last-child { grid-column: span 2; }
+      .reading-top { align-items: flex-start; flex-direction: column; }
+      .preferences { align-items: stretch; gap: .75rem; }
+      .pref-button { flex: 1 1 140px; min-height: 46px; }
+      .pager { flex-wrap: wrap; }
+      .pager-button { flex: 1 1 140px; min-height: 46px; }
+      .passage { padding: 1.35rem 1rem 1.5rem; }
+    }
+
+    @media print {
+      body, .site-shell { background: #fff !important; color: #000 !important; }
+      .reading-wrap { width: 100%; padding: 0; }
+      .tool-panel, .pager { display: none !important; }
+      .handout-header, .reading-card { border: 0; box-shadow: none; }
+      .handout-header { border-left: 4px solid #000; padding: 0 0 1rem 1rem; }
+      .reading-card { margin-top: .5rem; }
+      .reading-top { padding: .5rem 0 1rem; background: #fff !important; }
+      .passage { padding: 0; }
+      .passage-copy { font-size: 12pt !important; line-height: 1.5 !important; max-width: none; }
+      .passage[hidden] { display: none !important; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/fbe2ebfd64647c54.data_sdk.js" type="text/javascript" integrity="sha512-vkTX6CfvpHc3WbjK+tFJCaDuw4ERA4aEV/e5/7+MMJPMTF4RJYCI6CAwJBT/gtDW+dba4uLSsPUgDjVDHWtgUQ=="></script>
+  <script src="/_sdk/fcb6dc01f91829ac.resizing_sdk.js" type="text/javascript" integrity="sha512-YK8JfnN705qaEaVhiL7pcVB2Rs/BbdX5yxV55Az8zT/1JanyEWTw9HqCF915m9iV1YEaoil8qsjJz03l1Kb0Ug=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(237, 244, 241);">
+  <div class="site-shell">
+   <main class="reading-wrap" aria-labelledby="handout-title">
+    <header class="handout-header">
+     <div data-template-id="course-name" class="canva-text course-line" style="color: rgb(23, 107, 104); font-weight: 700; font-style: normal; font-size: 14px; letter-spacing: 0.08rem;">Professional Skills and Employability</div>
+     <div data-template-id="academic-year" class="canva-text course-line" style="margin-top: 0.2rem; color: rgb(23, 107, 104); font-weight: 700; font-style: normal; font-size: 14px; letter-spacing: 0.08rem;">2026-2027</div>
+     <h1 data-template-id="handout-title" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 700; font-style: normal; font-size: 36px;">Handout 1: SMART Goals</h1>
+     <p data-template-id="handout-intro" class="canva-text intro" style="color: rgb(80, 102, 108); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.6;">Read the passages and be prepared to present the summary to the group.</p>
+    </header>
+    <section data-template-id="navigation-panel" class="canva-panel tool-panel" aria-labelledby="navigation-label" style="background: rgb(255, 253, 248);">
+     <h2 data-template-id="navigation-label" class="canva-text section-label" style="color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 13px; letter-spacing: 0.08rem;">Choose a passage</h2>
+     <nav class="page-tabs" aria-label="Handout pages">
+      <button data-template-id="page-1-button" class="canva-button page-button" type="button" data-page="1" aria-current="page" style="background: rgb(23, 107, 104); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Page 1</button> <button data-template-id="page-2-button" class="canva-button page-button" type="button" data-page="2" style="background: rgb(247, 251, 249); color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 18px;">Page 2</button> <button data-template-id="page-3-button" class="canva-button page-button" type="button" data-page="3" style="background: rgb(247, 251, 249); color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 18px;">Page 3</button> <button data-template-id="page-4-button" class="canva-button page-button" type="button" data-page="4" style="background: rgb(247, 251, 249); color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 18px;">Page 4</button> <button data-template-id="page-5-button" class="canva-button page-button" type="button" data-page="5" style="background: rgb(247, 251, 249); color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 18px;">Page 5</button>
+     </nav>
+     <div class="preferences" aria-label="Reading preferences">
+      <span data-template-id="preferences-label" class="canva-text section-label" style="color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 13px; letter-spacing: 0.08rem;">Reading tools</span> <button data-template-id="decrease-text-button" class="canva-button pref-button" type="button" aria-label="Decrease text size" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 600; font-style: normal; font-size: 18px;">Decrease text size</button> <button data-template-id="reset-text-button" class="canva-button pref-button" type="button" aria-label="Reset text size" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 600; font-style: normal; font-size: 18px;">Reset text size</button> <button data-template-id="increase-text-button" class="canva-button pref-button" type="button" aria-label="Increase text size" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 600; font-style: normal; font-size: 18px;">Increase text size</button> <button data-template-id="contrast-button" class="canva-button pref-button" type="button" aria-pressed="false" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 600; font-style: normal; font-size: 18px;">High contrast</button> <button data-template-id="spacing-button" class="canva-button pref-button" type="button" aria-pressed="false" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 600; font-style: normal; font-size: 18px;">Comfortable spacing</button> <button data-template-id="print-button" class="canva-button pref-button" type="button" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 600; font-style: normal; font-size: 18px;">Print this passage</button>
+     </div>
+    </section>
+    <section data-template-id="reading-panel" class="canva-panel reading-card" aria-labelledby="current-passage-title" style="background: rgb(255, 253, 248);">
+     <div class="reading-top">
+      <h2 id="current-passage-title" data-template-id="passage-1-title" class="canva-text" tabindex="-1" style="color: rgb(24, 50, 58); font-weight: 700; font-style: normal; font-size: 27px;">Passage 1</h2><span id="progress" class="progress" aria-live="polite">Page 1 of 5</span>
+     </div>
+     <div id="live-status" class="sr-only" aria-live="polite"></div>
+     <article class="passage" data-passage="1">
+      <div class="passage-copy">
+       <p data-template-id="p1-1" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">When setting goals, it is crucial to ensure that they are specific. A specific goal is one that is clearly defined and leaves no room for ambiguity. It provides a clear direction and answers the questions of what, why, and how.</p>
+       <p data-template-id="p1-2" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">For instance, let's consider the difference between a vague goal and a specific goal related to career aspirations. A vague goal such as "I want a successful career" lacks clarity and fails to provide a clear sense of direction. It leaves the individual uncertain about the specific steps needed to achieve success. On the other hand, a specific goal like "I want to become a software engineer specializing in artificial intelligence" is much more focused and provides a clear direction for the individual.</p>
+       <p data-template-id="p1-3" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">A specific goal outlines the desired outcome in precise terms. It includes details such as the desired industry, profession, or specialization that the individual aims to pursue. By clearly defining the goal, individuals gain a sense of purpose and motivation, as they know exactly what they are working towards.</p>
+       <p data-template-id="p1-4" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Moreover, a specific goal helps individuals identify the necessary action steps to achieve it. It allows them to break down the goal into smaller, manageable tasks. In the case of the specific goal mentioned earlier, the individual can identify the relevant educational qualifications, programming languages to learn, and projects to undertake to become a software engineer specializing in artificial intelligence.</p>
+       <p data-template-id="p1-5" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Setting a specific goal also enables individuals to track their progress effectively. They can measure their achievements against the specific criteria set for the goal. This helps in monitoring their advancement and making any necessary adjustments or modifications to their strategies along the way.</p>
+       <p data-template-id="p1-6" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">In summary, setting specific goals is essential for providing a clear direction, eliminating ambiguity, and facilitating effective planning. It allows individuals to define their objectives precisely, identify the necessary action steps, and track their progress towards achieving the desired outcome.</p>
+      </div>
+     </article>
+     <article class="passage" data-passage="2" hidden="">
+      <h2 data-template-id="passage-2-title" class="canva-text sr-only" style="color: rgb(24, 50, 58); font-weight: 700; font-style: normal; font-size: 27px;">Passage 2</h2>
+      <div class="passage-copy">
+       <p data-template-id="p2-1" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Goals should also be measurable to facilitate progress tracking and maintain motivation. A measurable goal is one that has identifiable markers or criteria that indicate whether it has been achieved or not. By adding quantifiable criteria to a goal, individuals can objectively measure their progress and stay motivated.</p>
+       <p data-template-id="p2-2" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">For instance, let's compare a general goal with a measurable goal in the context of improving coding skills. A general goal like "I want to improve my coding skills" lacks measurable criteria, making it challenging to gauge progress. On the other hand, a measurable goal such as "I want to complete three online coding courses and solve ten programming challenges every month" provides clear and quantifiable targets.</p>
+       <p data-template-id="p2-3" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">By setting measurable goals, individuals can break down their aspirations into specific actions or achievements. They can set targets based on numbers, percentages, or specific milestones that can be easily tracked. This allows for regular progress evaluation and provides a sense of accomplishment as each target is met.</p>
+       <p data-template-id="p2-4" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Measurable goals also enhance motivation and focus. Having quantifiable targets gives individuals a clear sense of direction and purpose. It creates a tangible sense of progress and achievement, which can be highly motivating. When individuals witness their progress and see that they are reaching their set targets, it reinforces their confidence and drives them to work even harder.</p>
+       <p data-template-id="p2-5" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Furthermore, measurable goals enable individuals to assess the effectiveness of their strategies and make any necessary adjustments. By tracking their progress, individuals can identify areas of improvement and modify their approach accordingly. They can measure the impact of specific actions and determine if they are on track to achieve their desired outcomes.</p>
+       <p data-template-id="p2-6" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">In summary, setting measurable goals is crucial for progress tracking and maintaining motivation. By incorporating quantifiable criteria into goals, individuals can objectively assess their progress, stay focused, and make informed adjustments. Measurable goals provide a sense of achievement, enhance motivation, and increase the likelihood of success.</p>
+      </div>
+     </article>
+     <article class="passage" data-passage="3" hidden="">
+      <h2 data-template-id="passage-3-title" class="canva-text sr-only" style="color: rgb(24, 50, 58); font-weight: 700; font-style: normal; font-size: 27px;">Passage 3</h2>
+      <div class="passage-copy">
+       <p data-template-id="p3-1" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">When setting goals, it is important to ensure they are achievable. An achievable goal is one that is realistic and attainable. It strikes a balance between being challenging enough to inspire growth and progress, while also being within reach so as not to become discouraging.</p>
+       <p data-template-id="p3-2" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">To set achievable goals, it is essential to assess one's abilities, resources, and constraints. Consider factors such as current skills, knowledge, and experience, as well as the availability of time, support, and necessary resources. This evaluation helps in determining what is realistically feasible and avoids setting goals that are beyond one's reach.</p>
+       <p data-template-id="p3-3" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">For instance, let's compare an unrealistic goal with an achievable goal related to career aspirations. An unrealistic goal such as "I want to become a CEO of a Fortune 500 company within a year" may be highly ambitious but lacks feasibility. It disregards the years of experience, skills, and networking required to attain such a position. On the other hand, an achievable goal like "I want to gain five years of experience in management roles and work towards a leadership position in a reputable organization" acknowledges the need for practical steps and a gradual progression towards the desired outcome.</p>
+       <p data-template-id="p3-4" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">By setting achievable goals, individuals can maintain a sense of motivation and momentum. Attaining smaller milestones along the way boosts confidence and provides a sense of accomplishment, which in turn encourages further progress. It also allows individuals to focus their efforts on realistic targets and allocate resources effectively.</p>
+       <p data-template-id="p3-5" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Moreover, setting achievable goals promotes a growth mindset. It encourages individuals to stretch their capabilities and push beyond their comfort zones, while still providing a reasonable and attainable framework for success. This balance fosters continuous learning and development.</p>
+       <p data-template-id="p3-6" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">In summary, setting achievable goals is crucial for maintaining motivation, focusing efforts, and promoting growth. By assessing one's abilities and resources, individuals can set realistic targets that inspire progress without becoming overwhelming. Achievable goals ensure a sense of accomplishment and contribute to long-term success. When setting goals, it is important to ensure they are achievable. An achievable goal is one that is realistic and attainable, striking a balance between challenging and overwhelming. Assessing one's abilities, resources, and constraints is crucial in setting goals that can be realistically accomplished.</p>
+      </div>
+     </article>
+     <article class="passage" data-passage="4" hidden="">
+      <h2 data-template-id="passage-4-title" class="canva-text sr-only" style="color: rgb(24, 50, 58); font-weight: 700; font-style: normal; font-size: 27px;">Passage 4</h2>
+      <div class="passage-copy">
+       <p data-template-id="p4-1" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">When setting goals, it is crucial to ensure their relevance to one's aspirations, values, and long-term objectives. A relevant goal is one that aligns with an individual's personal and professional interests, contributing to overall growth and fulfillment. It ensures that efforts are focused on meaningful endeavors that resonate with one's values and passions.</p>
+       <p data-template-id="p4-2" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">By setting relevant goals, individuals can cultivate a sense of purpose and motivation. When goals are in line with their aspirations, individuals are more likely to feel inspired and driven to work towards them. The relevance of a goal adds meaning to the pursuit, making it more rewarding and satisfying.</p>
+       <p data-template-id="p4-3" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">For instance, let's compare a goal that lacks relevance with a relevant goal in the context of career aspirations. A goal that doesn't align with personal interests, such as "I want to pursue a career in finance because it pays well," may not provide the individual with a sense of fulfillment or satisfaction in the long run. On the other hand, a relevant goal like "I want to pursue a career in environmental sustainability to contribute towards creating a greener future" aligns with personal values and interests, making it a more meaningful pursuit.</p>
+       <p data-template-id="p4-4" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Setting relevant goals also ensures that individuals are investing their time, energy, and resources in endeavors that are meaningful to them. It allows them to allocate their efforts towards activities that resonate with their passions and contribute to their overall growth and development. This alignment increases the likelihood of success and personal satisfaction.</p>
+       <p data-template-id="p4-5" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Moreover, relevant goals can lead to a greater sense of fulfillment and happiness. When individuals engage in activities that are personally meaningful, they experience a deeper sense of purpose and satisfaction. This can have positive effects on overall well-being and motivation to continue progressing towards their goals.</p>
+       <p data-template-id="p4-6" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">In summary, setting relevant goals is essential for aligning aspirations, values, and long-term objectives. By pursuing goals that resonate with personal and professional interests, individuals can experience a sense of purpose and motivation. Relevant goals contribute to overall growth, fulfillment, and personal satisfaction.</p>
+      </div>
+     </article>
+     <article class="passage" data-passage="5" hidden="">
+      <h2 data-template-id="passage-5-title" class="canva-text sr-only" style="color: rgb(24, 50, 58); font-weight: 700; font-style: normal; font-size: 27px;">Passage 5</h2>
+      <div class="passage-copy">
+       <p data-template-id="p5-1" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">When setting goals, it is important to establish a specific timeframe or deadline, making them time-bound. A time-bound goal provides a sense of urgency and creates a clear target to work towards. Setting a deadline helps in prioritizing tasks, managing time effectively, and maintaining focus throughout the goal attainment process.</p>
+       <p data-template-id="p5-2" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">By assigning a specific timeframe to a goal, individuals can better structure their actions and allocate resources accordingly. It provides a sense of direction and helps in planning the necessary steps to achieve the desired outcome. Furthermore, a deadline adds a sense of accountability and encourages individuals to take action promptly.</p>
+       <p data-template-id="p5-3" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">For instance, let's compare an open-ended goal with a time-bound goal in the context of starting a business. An open-ended goal like "I want to start my own business" lacks a sense of urgency and may lead to procrastination or indefinite delays. On the other hand, a time-bound goal like "I want to launch my e-commerce business within the next six months" sets a clear timeframe and establishes a sense of urgency, motivating individuals to take concrete steps towards achieving the goal within the specified timeline.</p>
+       <p data-template-id="p5-4" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Setting a deadline also facilitates effective time management. With a specific timeframe in place, individuals can prioritize tasks, allocate resources, and establish milestones to track progress. It helps in breaking down the goal into smaller, manageable tasks and ensures that progress is made consistently.</p>
+       <p data-template-id="p5-5" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">Moreover, a time-bound goal allows for reflection and evaluation of progress. By having a deadline, individuals can assess their advancement and make any necessary adjustments along the way. It enables them to monitor their performance, identify potential roadblocks, and implement strategies to stay on track or make course corrections as needed.</p>
+       <p data-template-id="p5-6" class="canva-text" style="color: rgb(24, 50, 58); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.82;">In summary, setting time-bound goals is crucial for effective goal management. A specific timeframe creates a sense of urgency, prioritizes tasks, and facilitates efficient time allocation. It provides a clear target to work towards and helps individuals stay focused on their objectives. Additionally, a deadline allows for progress evaluation and ensures accountability throughout the goal attainment process. By setting time-bound goals, individuals increase their chances of success and maximize their productivity.</p>
+      </div>
+     </article>
+     <footer class="pager" aria-label="Passage navigation controls">
+      <button data-template-id="previous-button" id="previous-button" class="canva-button pager-button" type="button" disabled="" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 18px;">← Previous</button> <button data-template-id="next-button" id="next-button" class="canva-button pager-button" type="button" style="background: rgb(255, 255, 255); color: rgb(13, 78, 76); font-weight: 700; font-style: normal; font-size: 18px;">Next →</button>
+     </footer>
+    </section>
+   </main>
+  </div>
+  <script src="/_sdk/92570d8e491862b9.editing_sdk.js" integrity="sha512-FgTgBgZOGUl1XBrojWdmYvV2Ka+jYLWeeIrMhp1Q1xMV3FJfF+VJFjO6hw+EDGnXYa+zMZXNIP5UYLxGsdfP6g=="></script>
+  <script>
+    (() => {
+      let activePage = 1;
+      let fontStep = 1;
+      const sizes = ["1rem", "1.125rem", "1.25rem", "1.5rem"];
+      const passages = [...document.querySelectorAll(".passage")];
+      const pageButtons = [...document.querySelectorAll(".page-button")];
+      const title = document.getElementById("current-passage-title");
+      const progress = document.getElementById("progress");
+      const liveStatus = document.getElementById("live-status");
+      const previous = document.getElementById("previous-button");
+      const next = document.getElementById("next-button");
+
+      function selectPage(page, moveFocus) {
+        activePage = Math.max(1, Math.min(5, page));
+        passages.forEach(item => { item.hidden = Number(item.dataset.passage) !== activePage; });
+        pageButtons.forEach(button => {
+          const isActive = Number(button.dataset.page) === activePage;
+          button.setAttribute("aria-current", isActive ? "page" : "false");
+        });
+        const activeTitle = document.querySelector(`[data-template-id="passage-${activePage}-title"]`);
+        title.textContent = activeTitle ? activeTitle.textContent : `Passage ${activePage}`;
+        progress.textContent = `Page ${activePage} of 5`;
+        liveStatus.textContent = `Page ${activePage} selected. Passage ${activePage} is now displayed.`;
+        previous.disabled = activePage === 1;
+        next.disabled = activePage === 5;
+        if (moveFocus) title.focus({ preventScroll: true });
+      }
+
+      pageButtons.forEach(button => button.addEventListener("click", () => selectPage(Number(button.dataset.page), true)));
+      previous.addEventListener("click", () => selectPage(activePage - 1, true));
+      next.addEventListener("click", () => selectPage(activePage + 1, true));
+
+      document.getElementById("decrease-text-button").addEventListener("click", () => {
+        fontStep = Math.max(0, fontStep - 1);
+        document.documentElement.style.setProperty("--reading-size", sizes[fontStep]);
+      });
+      document.getElementById("reset-text-button").addEventListener("click", () => {
+        fontStep = 1;
+        document.documentElement.style.setProperty("--reading-size", sizes[fontStep]);
+      });
+      document.getElementById("increase-text-button").addEventListener("click", () => {
+        fontStep = Math.min(sizes.length - 1, fontStep + 1);
+        document.documentElement.style.setProperty("--reading-size", sizes[fontStep]);
+      });
+
+      document.getElementById("contrast-button").addEventListener("click", event => {
+        const enabled = document.body.classList.toggle("high-contrast");
+        event.currentTarget.classList.toggle("is-on", enabled);
+        event.currentTarget.setAttribute("aria-pressed", String(enabled));
+      });
+
+      document.getElementById("spacing-button").addEventListener("click", event => {
+        const enabled = document.documentElement.style.getPropertyValue("--reading-line") === "2.2";
+        document.documentElement.style.setProperty("--reading-line", enabled ? "1.82" : "2.2");
+        event.currentTarget.classList.toggle("is-on", !enabled);
+        event.currentTarget.setAttribute("aria-pressed", String(!enabled));
+      });
+
+      document.getElementById("print-button").addEventListener("click", () => window.print());
+
+      window.addEventListener("keydown", event => {
+        if ((event.altKey || event.ctrlKey || event.metaKey) || !["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+        if (event.key === "ArrowLeft" && activePage > 1) selectPage(activePage - 1, true);
+        if (event.key === "ArrowRight" && activePage < 5) selectPage(activePage + 1, true);
+      });
+
+      setTimeout(() => selectPage(1, false), 50);
+    })();
+  </script>
+ 
+</body></html>
